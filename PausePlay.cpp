@@ -12,10 +12,10 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     ZeroMemory(inputs, sizeof(inputs));
 
     inputs[0].type = INPUT_KEYBOARD;
-    inputs[0].ki.wVk = VK_MEDIA_NEXT_TRACK;
+    inputs[0].ki.wVk = VK_MEDIA_PREV_TRACK;
 
     inputs[1].type = INPUT_KEYBOARD;
-    inputs[1].ki.wVk = VK_MEDIA_NEXT_TRACK;
+    inputs[1].ki.wVk = VK_MEDIA_PREV_TRACK;
     inputs[1].ki.dwFlags = KEYEVENTF_KEYUP;
 
     UINT uSent = SendInput(ARRAYSIZE(inputs), inputs, sizeof(INPUT));
